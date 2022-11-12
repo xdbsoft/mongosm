@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"net/http/httputil"
 	"os"
+
+	"github.com/xdbsoft/mongosm"
 )
 
 func main() {
@@ -32,9 +33,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		name = "World"
 	}
 	fmt.Fprintf(w, "Hello %s!\n", name)
-
-	b, err := httputil.DumpRequest(r, false)
-	if err == nil {
-		w.Write(b)
-	}
+	mongosm.DisplayTrace(w, r)
 }
