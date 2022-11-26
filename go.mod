@@ -2,12 +2,19 @@ module github.com/xdbsoft/mongosm
 
 go 1.19
 
-require go.mongodb.org/mongo-driver v1.11.0
+require (
+	github.com/dustin/go-heatmap v0.0.0-20180603032536-b89dbd73785a
+	github.com/paulmach/orb v0.7.1
+	github.com/paulmach/osm v0.7.0
+	go.mongodb.org/mongo-driver v1.11.0
+)
 
 require (
+	github.com/datadog/czlib v0.0.0-20160811164712-4bc9a24e37f2 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe // indirect
+	github.com/paulmach/protoscan v0.2.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.1 // indirect
@@ -16,4 +23,5 @@ require (
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
 	golang.org/x/text v0.3.7 // indirect
+	google.golang.org/protobuf v1.28.1 // indirect
 )
